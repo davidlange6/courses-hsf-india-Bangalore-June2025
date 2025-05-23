@@ -26,6 +26,8 @@ dependencies:
       - vector
       - bash_kernel
       - pybind11
+      - orion
+      - optuna
       
      
 variables:
