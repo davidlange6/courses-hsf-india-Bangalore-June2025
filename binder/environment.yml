@@ -7,6 +7,10 @@ dependencies:
   - cmake 
   - openssh 
   - singularity
+  - boost
+  - eigen
+  - geant4
+  - pythia8
   - pip:
       - jupyterlab-deck
       - jupyterlab-mathjax3
@@ -21,6 +25,8 @@ dependencies:
       - pandas
       - vector
       - bash_kernel
+      - pybind11
+      
      
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
