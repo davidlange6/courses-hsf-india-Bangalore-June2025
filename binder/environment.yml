@@ -10,6 +10,7 @@ dependencies:
   - boost
   - eigen
   - geant4
+  - root
   - pythia8
   - pip:
       - jupyterlab-deck
