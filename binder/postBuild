@@ -3,17 +3,21 @@ set -e
 
 python -m bash_kernel.install
 
-#git clone https://github.com/AIDASoft/DD4hep
-#mkdir build_dd 
-#cd build_dd
-#cmake --debug-output -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook/x86_64-conda-linux-gnu/sysroot/usr/include/ \
-#-DDD4HEP_RELAX_PYVER=ON -DDD4HEP_USE_GEANT4=ON -DBoost_NO_BOOST_CMAKE=ON \
-#-DDD4HEP_USE_LCIO=OFF -DBUILD_TESTING=ON -DROOT_DIR=$ROOTSYS \
-#-D CMAKE_BUILD_TYPE=Release ../DD4hep > dd4hep_cmake.out 2>&1 
-
-#make -j4 > dd4hep_make.out 2>&1
-#make install > dd4hep_install.out 2>&1
-
+git clone https://github.com/AIDASoft/DD4hep
+echo "t1"
+mkdir build_dd 
+echo "t2"
+cd build_dd
+echo "t3"
+cmake --debug-output -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook/x86_64-conda-linux-gnu/sysroot/usr/include/ \
+-DDD4HEP_RELAX_PYVER=ON -DDD4HEP_USE_GEANT4=ON -DBoost_NO_BOOST_CMAKE=ON \
+-DDD4HEP_USE_LCIO=OFF -DBUILD_TESTING=ON -DROOT_DIR=$ROOTSYS \
+-D CMAKE_BUILD_TYPE=Release ../DD4hep > dd4hep_cmake.out 2>&1 
+echo "t4"
+make -j4 > dd4hep_make.out 2>&1
+echo "t5"
+make install > dd4hep_install.out 2>&1
+echo "t6"
 
 # pip appears to leave behind 4GB of stuff.. lets remove it.
 pip cache purge
