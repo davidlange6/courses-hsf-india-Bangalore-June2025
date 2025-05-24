@@ -13,7 +13,7 @@ conda list
 #-DFREETYPE_DIR=/srv/conda/envs/notebook/ \
 find /srv/conda/envs/notebook -name \*reetype\*h
 find /srv/conda/envs/notebook -name \*reetype\*so\*
-cat /srv/conda/envs/notebook/include/freetype2/freetype/freetype.h
+#cat /srv/conda/envs/notebook/include/freetype2/freetype/freetype.h
 cmake --debug-output -DEXPAT_INCLUDE_DIR=/srv/conda/envs/notebook/include \
 -DEXPAT_LIBRARY=/srv/conda/envs/notebook/lib/ \
 -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook:/srv/conda/envs/notebook/x86_64-conda-linux-gnu/sysroot/usr/include/ \
