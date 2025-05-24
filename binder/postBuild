@@ -11,7 +11,9 @@ cd build_dd
 echo "t3"
 ls
 pwd
-cmake --debug-output -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook/x86_64-conda-linux-gnu/sysroot/usr/include/ -DDD4HEP_RELAX_PYVER=ON -DDD4HEP_USE_GEANT4=ON -DBoost_NO_BOOST_CMAKE=ON -DDD4HEP_USE_LCIO=OFF -DBUILD_TESTING=ON -DROOT_DIR=$ROOTSYS -D CMAKE_BUILD_TYPE=Release ../DD4hep > dd4hep_cmake.out 2>&1 
+find /srv/conda/envs | grep -i expat
+cmake --debug-output -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook/x86_64-conda-linux-gnu/sysroot/usr/include/ -DDD4HEP_RELAX_PYVER=ON -DDD4HEP_USE_GEANT4=ON -DBoost_NO_BOOST_CMAKE=ON -DDD4HEP_USE_LCIO=OFF -DBUILD_TESTING=ON -DROOT_DIR=$ROOTSYS -D CMAKE_BUILD_TYPE=Release ../DD4hep 
+#> dd4hep_cmake.out 2>&1 
 echo "t4"
 tail -1000 dd4hep_cmake.out
 make -j4 > dd4hep_make.out 2>&1
