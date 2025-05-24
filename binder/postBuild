@@ -9,7 +9,8 @@ cd build_dd
 
 pwd
 conda list
-find /srv/conda/envs/notebook -name \*reetype\*
+find /srv/conda/envs/notebook -name \*reetype\*h
+find /srv/conda/envs/notebook -name \*reetype\*so\*
 cmake --debug-output -DEXPAT_INCLUDE_DIR=/srv/conda/envs/notebook/include \
 -DEXPAT_LIBRARY=/srv/conda/envs/notebook/lib/ -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook \
 -DZLIB_ROOT=/srv/conda/envs/notebook/ \
