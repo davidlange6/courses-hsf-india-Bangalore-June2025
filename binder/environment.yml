@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - cmake 
+  - cmake=3. 
   - openssh 
   - singularity
   - boost
@@ -12,6 +12,8 @@ dependencies:
   - geant4
   - root
   - pythia8
+  - hepmc3
+  - tbb
   - pip:
       - jupyterlab-deck
       - jupyterlab-mathjax3
