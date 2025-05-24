@@ -4,15 +4,12 @@ set -e
 python -m bash_kernel.install
 
 git clone https://github.com/AIDASoft/DD4hep
-echo "t1"
 mkdir build_dd 
-echo "t2"
 cd build_dd
-echo "t3"
-ls
+
 pwd
 conda list
-find /srv/conda/envs/notebook \*reetype\*
+find /srv/conda/envs/notebook -name \*reetype\*
 cmake --debug-output -DEXPAT_INCLUDE_DIR=/srv/conda/envs/notebook/include \
 -DEXPAT_LIBRARY=/srv/conda/envs/notebook/lib/ -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook \
 -DZLIB_ROOT=/srv/conda/envs/notebook/ \
