@@ -14,7 +14,7 @@ find /srv/conda/envs/notebook -name \*reetype\*h
 find /srv/conda/envs/notebook -name \*reetype\*so\*
 cmake --debug-output -DEXPAT_INCLUDE_DIR=/srv/conda/envs/notebook/include \
 -DEXPAT_LIBRARY=/srv/conda/envs/notebook/lib/ \
--DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook \
+-DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook:/srv/conda/envs/notebook/x86_64-conda-linux-gnu/sysroot/usr/include/ \
 -DZLIB_ROOT=/srv/conda/envs/notebook/ \
 -DFREETYPE_DIR=/srv/conda/envs/notebook/ \
 -DDD4HEP_RELAX_PYVER=ON -DDD4HEP_USE_GEANT4=ON -DBoost_NO_BOOST_CMAKE=ON -DDD4HEP_USE_LCIO=OFF \
