@@ -14,6 +14,7 @@ dependencies:
   - pythia8
   - hepmc3
   - tbb
+  - libgl
   - pip:
       - jupyterlab-deck
       - jupyterlab-mathjax3
