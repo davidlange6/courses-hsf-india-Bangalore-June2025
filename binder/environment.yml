@@ -16,6 +16,7 @@ dependencies:
   - tbb
   - libgl
   - mesalib
+  - mesa-common-dev
   - pip:
       - jupyterlab-deck
       - jupyterlab-mathjax3
