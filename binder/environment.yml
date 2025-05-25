@@ -13,7 +13,7 @@ dependencies:
   - root
   - pythia8
   - hepmc3
-  - tbb=2020.1
+  - tbb
   - libgl
   - mesalib
   - pip:
