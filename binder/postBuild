@@ -15,6 +15,7 @@ conda list
 #find /srv/conda/envs/notebook -name \*reetype\*so\*
 #cat /srv/conda/envs/notebook/include/freetype2/freetype/freetype.h
 find /srv/conda/envs/notebook -name libGL\*
+find /srv/conda/envs/notebook -name libOpenGL\*
 find /srv/conda/envs/notebook -name gl.h
 
 cmake --debug-output -DCMAKE_PREFIX_PATH=/srv/conda/envs/notebook \
